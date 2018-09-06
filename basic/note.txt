@@ -32,7 +32,7 @@ Java
 변수(Variable)
 - 특정 값을 임시로 저장하기 위한 메모리 공간, 값의 변경이 자유로움
 
-변수의 자료형(Data Type).. 기본 자료형
+변수의 자료형(Data Type).. 기본 자료형: 정해진 공간에 하나의 데이터가 들어가는 자료의 타입
 - boolean / 1byte / true|false 논리값
 - char / 2byte / unicode single character / 작은 따옴표로 표시
 - byte / 1byte / -128 ~ 127 정수 표현 
