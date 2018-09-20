@@ -4,6 +4,8 @@ public class StringEx2 {
     public static void main(String[] args) {
         String str1 = "880507-1234567";
         String str2 = "980917-2234567";
+        String str3 = "080717-3234567";
+        String str4 = "020917-4234567";
         
         /*
          * 주민등록번호를 이용하여 생년월일과 성별을 구하는 메소드를 각각 만드시오.
@@ -12,6 +14,8 @@ public class StringEx2 {
         
         System.out.println(gender(str1) + ", " + birth(str1));
         System.out.println(gender(str2) + ", " + birth(str2));
+        System.out.println(gender(str3) + ", " + birth(str3));
+        System.out.println(gender(str4) + ", " + birth(str4));
     }
     
     public static String birth(String regiNo) {
