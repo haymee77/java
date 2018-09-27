@@ -12,6 +12,8 @@ public class ArrayMinMax {
             arrInt[i] = sc.nextInt();
         }
         
+        sc.close();
+        
         System.out.println("Min: " + minValue(arrInt));
         System.out.println("Max: " + maxValue(arrInt));
     }
