@@ -23,6 +23,9 @@ public class StringEx2 {
     }
     
     public static String gender(String regiNo) {
-        return (regiNo.charAt(7) == '1') ? "害切" : "食切";
+        String g = regiNo.charAt(7) + "";
+        int gn = Integer.parseInt(g);
+        
+        return (gn % 2 == 1) ? "害切" : "食切";
     }
 }
