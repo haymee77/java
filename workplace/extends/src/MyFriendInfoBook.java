@@ -2,20 +2,22 @@ import java.util.Scanner;
 
 class Friend {
     String name;
-    String phone;
+    String phoneNum;
     String addr;
     
     public Friend(String name, String phone, String addr) {
         this.name = name;
-        this.phone = phone;
+        this.phoneNum = phone;
         this.addr = addr;
     }
     
     public void showData() {
         System.out.println("Name: " + name);
-        System.out.println("Phone: " + phone);
+        System.out.println("Phone: " + phoneNum);
         System.out.println("Address: " + addr);
     }
+    
+    public void showBasicInfo() {}
 }
 
 class HighFriend extends Friend {
@@ -128,6 +130,21 @@ class MyFriendInfoBook {
             
             Scanner sc = new Scanner(System.in);
             int choice = sc.nextInt();
+            
+            switch (choice) {
+            case 1 : case 2 : 
+                handler.addFriend(choice);
+                break;
+            case 3 :
+                handler.showAllData();
+                break;
+            case 4 :
+                handler.showAllSimpleData();
+                break;
+            case 5 :
+                System.out.println("Exit");
+                return;
+            }
         }
     }
 }
